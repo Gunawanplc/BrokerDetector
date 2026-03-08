@@ -9,11 +9,11 @@
       
       // 2. Cek apakah kita di GitHub (punya sub-folder)
       // Jika URL mengandung 'vue-pik2-report', kita arahkan kembali ke situ
-      if (path.includes('/vue-pik2-report/')) {
+      if (path.includes('/BrokerDetector/')) {
         // Simpan sisa path setelah nama repo (misal: 'setting')
-        var segment = path.split('/vue-pik2-report/')[1];
+        var segment = path.split('/BrokerDetector/')[1];
         // Arahkan kembali ke root repo dengan menyertakan sisa path tadi
-        window.location.replace('/vue-pik2-report/#' + (segment || ''));
+        window.location.replace('/BrokerDetector/#' + (segment || ''));
       } else {
         // Jika di lokal/Nginx, langsung balik ke root
         window.location.replace('/');
